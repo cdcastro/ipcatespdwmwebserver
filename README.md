@@ -82,8 +82,14 @@ sudo apt-get install phpmyadmin apache2-utils
 ```
 
 ## Adicionar o phpMyAdmin à configuração do Apache
+Editar o ficheiro:
 ```
 sudo nano /etc/apache2/apache2.conf
+```
+
+Acrescentar no final do ficheiro a seguinte linha:
+```
+Include /etc/phpmyadmin/apache.conf
 ```
 
 ## Reiniciar o Apache
